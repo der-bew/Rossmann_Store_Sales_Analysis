@@ -94,7 +94,7 @@ class Handler:
         This function takes a DataFrame with a 'Date' column and adds new columns for 'Day', 'Week', 'Month', 'Year', and 'Season'.
         """
         # Convert 'Date' column to datetime
-        self.df["Date"] = pd.to_datetime(self.df["Date"], infer_datetime_format=True)
+        self.df["Date"] = pd.to_datetime(self.df["Date"], errors="coerce")
 
         # Extract 'Day', 'Week', 'Month', and 'Year' from 'Date'
         self.df["Day"] = self.df["Date"].dt.day
