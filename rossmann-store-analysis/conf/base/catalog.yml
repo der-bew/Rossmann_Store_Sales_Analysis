@@ -1,0 +1,9 @@
+store:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/store.csv
+test:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/test.csv
+train:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/train.csv
