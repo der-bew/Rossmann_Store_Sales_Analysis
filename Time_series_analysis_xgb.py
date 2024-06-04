@@ -134,7 +134,7 @@ def train_evaluate_model(df, target_column):
     return model, y_pred, y_test, X
 
 
-df["Sales"] = df["Sales"].fillna(df["Sales"].mean())
+#df["Sales"] = df["Sales"].fillna(df["Sales"].mean())
 model, y_pred, y_test, X = train_evaluate_model(df, "Sales")
 
 
