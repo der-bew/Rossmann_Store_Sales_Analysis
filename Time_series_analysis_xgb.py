@@ -41,7 +41,7 @@ path = "../data/02_intermediate/train_clean.csv"
 df = load_data(path)
 
 
-df.head()
+#df.head()
 
 
 logger.info("Droping unecessary coulmuns")
